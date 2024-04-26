@@ -5,7 +5,7 @@ SELECT
 	`City`,
     ROUND(AVG(`Tax 5%`), 2) AS AVG_Tax
 FROM newschema.`walmartsalesdata.csv`
-1.	GROUP BY `City`
+GROUP BY `City`
 ORDER BY AVG_Tax DESC;
 
 
