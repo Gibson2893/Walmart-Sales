@@ -1,0 +1,17 @@
+-- Which branch sold more products than average product sold?
+
+  
+  SELECT 
+	`Branch`, 
+    SUM(`Quantity`) AS Quantity_SUM
+FROM newschema.`walmartsalesdata.csv`
+GROUP BY `Branch`
+HAVING SUM(`Quantity`) > (SELECT AVG(`Quantity`) FROM newschema.`walmartsalesdata.csv`);
+
+
+
+
+Branch	Quantity_SUM
+A	      1859
+C	      1831
+B	      1820
