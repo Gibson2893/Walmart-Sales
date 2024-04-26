@@ -1,5 +1,6 @@
 -- Which of the customer types brings the most revenue?
 
+
 SELECT
 	`Customer type`,
 	SUM(`Total`) AS Total_revenue
