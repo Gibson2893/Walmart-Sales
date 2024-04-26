@@ -1,0 +1,19 @@
+-- What is the average rating of each product line
+
+
+SELECT
+	ROUND(AVG(`Rating`), 2) as AVG_rating,
+    `Product line`
+FROM newschema.`walmartsalesdata.csv`
+GROUP BY `Product line`
+ORDER BY AVG_rating DESC;
+
+
+
+AVG_rating	Product line
+7.11	      Food and beverages
+7.03	      Fashion accessories
+7	          Health and beauty
+6.92	      Electronic accessories
+6.92	      Sports and travel
+6.84	      Home and lifestyle
