@@ -11,6 +11,6 @@ ORDER BY AVG_Tax DESC;
 
 
 City	    AVG_Tax
-Naypyitaw	16.05
-Mandalay	15.23
-Yangon	  14.87
+Naypyitaw    16.05
+Mandalay     15.23
+Yangon	     14.87
