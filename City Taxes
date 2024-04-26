@@ -1,0 +1,16 @@
+-- Which city has the largest tax/VAT percent?
+
+
+SELECT
+	`City`,
+    ROUND(AVG(`Tax 5%`), 2) AS AVG_Tax
+FROM newschema.`walmartsalesdata.csv`
+1.	GROUP BY `City`
+ORDER BY AVG_Tax DESC;
+
+
+
+City	    AVG_Tax
+Naypyitaw	16.05
+Mandalay	15.23
+Yangon	  14.87
