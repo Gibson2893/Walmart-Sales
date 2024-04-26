@@ -1,0 +1,13 @@
+-- Which of the customer types brings the most revenue?
+SELECT
+	`Customer type`,
+	SUM(`Total`) AS Total_revenue
+FROM newschema.`walmartsalesdata.csv`
+GROUP BY `Customer type`
+ORDER BY Total_revenue;
+
+
+
+Customer type	Total_revenue
+Normal	158743.305
+Member	164223.444
